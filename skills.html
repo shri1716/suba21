@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="icon" href="imagem33.jpg" />
+    <!--google fonts-->
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <!--my css file-->
+    <link rel="stylesheet" href="style.css" />
+    <!--font awesome icons-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="background">
+    <!--Navbar-->
+    <nav class="navbar">
+        <h1>My Portfolio</h1>
+        <div class="navbar-links">
+            <p class="navbar-link"> <a href="aboutme.html">About Me</a></p>
+            <p class="navbar-link"><a href="education.html">Education</a></p>
+            <p class="navbar-link"><a href="skills.html">Skills</a></p>
+            <p class="navbar-link"> <a href="projects.html">Projects & certifications</a></p>
+            <p class="navbar-link"><a href="resume.html">Resume</a></p>
+        </div>
+        <div class="navbar-menu-toggle" onclick="showNavbar()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="side-navbar">
+            <p style="text-align:right" onclick="closeNavbar()">
+            <i class="fa-solid fa-xmark"></i>
+            </p>
+        
+        <div class="side-navbar-links">
+            <p class="side-navbar-link"> <a href="aboutme.html">About Me</a></p>
+            <p class="side-navbar-link"><a href="education.html">Education</a></p>
+            <p class="side-navbar-link"><a href="skills.html">Skills</a></p>
+            <p class="side-navbar-link"> <a href="projects.html">Projects & certifications</a></p>
+            <p class="side-navbar-link"><a href="resume.html">Resume</a></p>
+        </div>
+        
+    </nav>
+    
+
+  <div class="order3"><h1 >Tech Topics Overview</h1></div>
+   <div class="order1">
+    <div class="container4">
+        <!-- HTML Section -->
+        <div class="topic">
+            <input type="checkbox" id="html-toggle">
+            <label for="html-toggle">HTML</label>
+            <div class="content">
+                <p>I have worked with HTML (Hypertext Markup Language), which I use to structure and organize web content.
+                   HTML serves as the backbone of web development, and I utilize it to create the foundational layout of websites.
+                    My expertise includes defining headings, paragraphs, links, images, and other essential elements. By leveraging HTML, 
+                    I can ensure that web pages are well-structured and user-friendly, providing a solid skeleton upon which additional styles and
+                    functionality can be built.</p>
+            </div>
+        </div>
+
+        <!-- CSS (Bootstrap) Section -->
+        <div class="topic">
+            <input type="checkbox" id="css-toggle">
+            <label for="css-toggle">CSS (Bootstrap)</label>
+            <div class="content">
+                <p>I am familiar with CSS (Cascading Style Sheets), which I use to define the visual presentation of HTML elements.
+                   Additionally, I have worked  with Bootstrap, a front-end framework that simplifies responsive web design by 
+                   providing pre-built components like grids, buttons, and navigation bars. By leveraging its use of flexbox and grid systems, create adaptable and visually appealing layouts."
+
+                </p>
+            </div>
+        </div>
+
+        <!-- JavaScript (React JS) Section -->
+        <div class="topic">
+            <input type="checkbox" id="js-toggle">
+            <label for="js-toggle">JavaScript (React JS)</label>
+            <div class="content">
+                <p>I have known JavaScript, a programming language that enables me to add interactivity to web pages, handle user input, 
+                  and manipulate the DOM. With JavaScript, I can create dynamic and responsive web experiences, enhancing the functionality
+                   and user engagement of websites.</p>
+            </div>
+        </div>
+
+        <!-- Python (MySQL .connector, Tkinter Basics, NumPy, Pandas, Flask) Section -->
+        <div class="topic">
+            <input type="checkbox" id="python-toggle">
+            <label for="python-toggle">Python (MySQL .connector, Tkinter, NumPy, Pandas, Flask)</label>
+            <div class="content">
+                 <p> I have worked with Python, applying Object-Oriented Programming (OOP) principles to 
+                  create efficient and maintainable code. I’ve worked with libraries for interacting with databases, enabling 
+                  seamless data manipulation and retrieval and know about libraries for building intuitive interfaces with widgets like buttons and text boxes. I prioritize modularity and 
+                  reusability in my code to ensure scalability to build structured and 
+                  efficient applications for various use cases.
+
+
+
+                  .</p>
+            </div>
+        </div>
+
+        <!-- Java (Basics and Intermediate Concepts) Section -->
+        <div class="topic">
+            <input type="checkbox" id="java-toggle">
+            <label for="java-toggle">Java (Basics & Intermediate Concepts)</label>
+            <div class="content">
+                <p>I am familiar with Java which is an object-oriented programming language used for developing cross-platform applications.
+                   Basics include data types, loops, conditionals, and methods, while intermediate concepts focus on OOP 
+                   (Inheritance, Polymorphism), exception handling, and collections. Java is widely used in enterprise 
+                   applications and Android development.</p>
+            </div>
+        </div>
+
+        <!-- Agile Components Section -->
+        <div class="topic">
+            <input type="checkbox" id="agile-toggle">
+            <label for="agile-toggle">Agile Components (Git, GitHub, Bitbucket, Node.js, VS Code, PyCharm)</label>
+            <div class="content">
+                <p>I have worked with Git, a version control system that helps track changes in code and facilitates collaboration. I am proficient 
+                  in using platforms like GitHub and Bitbucket to host repositories, manage versions, and collaborate with teams through features such as 
+                  pull requests and branching. I have worked with Node.js, a JavaScript runtime for building scalable network applications, enabling
+                   server-side development with JavaScript. For development, I use VS Code, a versatile code editor with debugging and Git integration, and PyCharm, an IDE tailored for Python, offering advanced tools
+                   for code analysis, testing, and debugging.</p>
+            </div>
+        </div>
+
+        <!-- Database Management Section -->
+        <div class="topic">
+            <input type="checkbox" id="database-toggle">
+            <label for="database-toggle">MySQL & Oracle Database Management</label>
+            <div class="content">
+              <p>I am familiar with database management and query languages, utilizing tools for handling large datasets and performing 
+                complex operations and I worked with structured query languages to manage and manipulate data efficiently which includes 
+                writing optimized queries and ensuring smooth database performance.
+             </div>
+        </div>
+    </div>
+  </div>
+</body>
+
+
+
+  <!--footer-->
+  <div class="footer">
+    <div class="footer-container">
+      <div class="footer-box-1">
+       <h2 class="heading-text">Profile-links</h2>
+       <ul class="footer-2">
+        <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/subathira-kumar/">https://www.linkedin.com/in/subathira-kumar/</a>  </li>
+        <li><strong>Email:</strong> <a href="mailto:subathiradgl@gmail.com">subathiradgl@gmail.com</a>  </li>
+        <li><strong>GitHub:</strong> <a href="https://github.com/subathira-kumar">https://github.com/subathira-kumar</a> </li>
+      </ul> 
+      <p>@ 2024 my Portfolio.com</p>
+       </div>   
+      </div>
+    </div>
+    
+  </div>
+  
+        
+    <script src="index.js"></script>
+  </body>
+</html>
+
