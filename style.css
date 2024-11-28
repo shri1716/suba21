@@ -467,7 +467,33 @@ body{
   width: 100%;
   border-radius: 20px;
   padding-bottom: 70px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  overflow: hidden;  /* Optional, hides content that overflows */
+  
 }
+#githubLink {
+    display: inline-block;
+    word-wrap: break-word;
+    max-width: 100%;
+    text-overflow: ellipsis;
+    white-space: normal;
+  }
+
+  @media (max-width: 768px) {
+    .project-description {
+      padding: 10px;
+    }
+    #githubLink {
+      font-size: 14px;
+    }
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+
 
 .certifications, .content-section {
   background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
