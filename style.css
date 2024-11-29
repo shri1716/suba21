@@ -201,48 +201,38 @@ body{
 
   
   /* Container styling */
-.container {
-    position: relative;
-    width: 100%;                   /* Full width of the viewport */
-    height: 80vh;                  /* 80% of the viewport height */
-    background: url('your-image-path.jpg') center/cover no-repeat; /* Cover image */
-    display: flex;                 /* Flexbox for easy centering */
-    justify-content: center;       /* Center horizontally */
-    align-items: center;           /* Center vertically */
-    overflow: hidden;              /* Prevent overflow */
-    margin: 0;                     /* Remove default margins */
-}
-
-/* Heading styling */
-.container h1 {
-    color: white;                  /* Text color */
-    font-size: 5vw;                /* Responsive font size */
+  .container {
+    position: relative;             /* Make the container a positioning context for the h1 */
+    display: block;
+    width: 100%;                    /* Full width of the container */
+    height: 80vh;                   /* Set the height to a percentage of the viewport */
+    overflow: hidden;               /* Ensure the content doesn't overflow */
+    background-size: cover;         /* Ensure the background image covers the container */
+    background-position: center;    /* Center the background image */
+  }
+  
+  .container h1 {
+    position: absolute;             /* Position the text relative to the container */
+    top: 50%;                       /* Center the text vertically */
+    left: 50%;                      /* Center the text horizontally */
+    transform: translate(-50%, -50%); /* Offset to truly center the text */
+    color: white;                   /* White text for contrast */
+    font-size: 5vw;                  /* Make the font size responsive to viewport width */
     margin: 0;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);  /* Text shadow for better readability */
-    text-align: center;
-    max-width: 90%;                /* Prevent text from overflowing the container */
-}
-
-/* Mobile-specific adjustments */
-@media screen and (max-width: 700px) {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow for better readability */
+    text-align: center;             /* Center the text inside the h1 */
+  }
+  
+  /* Responsive design for smaller screens */
+  @media screen and (max-width: 700px) {
     .container {
-        height: 60vh;              /* Reduce height for smaller screens */
+        height: 60vh;  /* Adjust the container height on smaller screens */
     }
-
+  
     .container h1 {
-        font-size: 7vw;            /* Increase font size slightly for readability */
-        max-width: 80%;            /* Ensure the text doesn't overflow */
-        padding: 0 10px;           /* Add padding for better spacing */
+        font-size: 8vw;  /* Adjust font size on smaller screens */
     }
-}
-
-/* Extra small screens */
-@media screen and (max-width: 400px) {
-    .container h1 {
-        font-size: 9vw;            /* Larger font for very small screens */
-    }
-}
-
+  }
 
 
     
