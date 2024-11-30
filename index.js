@@ -31,8 +31,8 @@ function closeNavbar()
         var link = document.createElement("a");
         
         // Set the download attribute and the href to the resume PDF file
-        link.href = "subathira_resume.pdf"; // Path to your resume file
-        link.download = "subathira_resume.pdf"; // File name for download
+        link.href = "subathira_resumee.pdf"; // Path to your resume file
+        link.download = "subathira_resumee.pdf"; // File name for download
         
         // Append the link to the document (it needs to be part of the DOM to trigger the download)
         document.body.appendChild(link);
